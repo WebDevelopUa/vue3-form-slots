@@ -1,17 +1,58 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+    <!-- Form #1 -->
+    <AppForm>
+      <template v-slot:help>
+        <h3>Form #1</h3>
+        <p>{{ help }}</p>
+      </template>
+      <template v-slot:fields>
+        <input type="text" placeholder="email">
+        <input type="text" placeholder="username">
+        <input type="password" placeholder="password">
+      </template>
+      <template v-slot:buttons>
+        <button type="submit">Send</button>
+      </template>
+
+      <small><i>Status Message</i></small>
+
+    </AppForm>
+
+
+    <!-- Form #2 -->
+    <AppForm>
+      <template v-slot:help>
+        <h3>Form #2</h3>
+        <p>{{ help }}</p>
+      </template>
+      <template v-slot:fields>
+        <input type="text" placeholder="name">
+        <input type="text" placeholder="message">
+      </template>
+      <template v-slot:buttons>
+        <button type="submit">Send</button>
+      </template>
+    </AppForm>
+
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import AppForm from "@/components/AppForm";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    AppForm
+  },
+  data() {
+    return {
+      help: 'Custom App component data() for Help section'
+    }
   }
 }
 </script>
@@ -24,5 +65,12 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+input {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 6em;
 }
 </style>
