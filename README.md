@@ -33,6 +33,19 @@ Components that can be swapped with another components.
 }
 ```
 
+Animation Hooks:
+
+* before-enter
+* enter
+* after-enter
+* before-leave
+* leave
+* after-leave
+
+## [Web Animations API](https://developer.mozilla.org/ru/docs/Web/API/Web_Animations_API)
+
+* [Using the Web Animations API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API/Using_the_Web_Animations_API)
+
 ----- 
 
 ## Project setup

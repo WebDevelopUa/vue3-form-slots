@@ -2,9 +2,12 @@
   <div id="app">
 
     <h2>Animation</h2>
-        <TransitionAnimation/>
+    <JsAnimation/>
+    <br/>
+    <hr/>
+    <br/>
 
-
+    <TransitionAnimation/>
     <br/>
     <hr/>
     <br/>
@@ -73,10 +76,12 @@ import AppForm from "@/components/AppForm";
 import ComponentX from "@/components/ComponentX";
 import ComponentY from "@/components/ComponentY";
 import TransitionAnimation from "@/components/TransitionAnimation";
+import JsAnimation from "@/components/JsAnimation";
 
 export default {
   name: 'App',
   components: {
+    JsAnimation,
     TransitionAnimation,
     ComponentY,
     ComponentX,
