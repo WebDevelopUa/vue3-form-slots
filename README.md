@@ -6,7 +6,6 @@ Add ability to use data from a parent App component.
 
 No need to pass it down like a prop (alternative).
 
-
 ## [Dynamic components](https://v3.ru.vuejs.org/ru/guide/component-dynamic-async.html)
 
 Components that can be swapped with another components.
@@ -14,11 +13,25 @@ Components that can be swapped with another components.
 ## [Animations](https://v3.ru.vuejs.org/ru/guide/transitions-enterleave.html)
 
 ```html
-  <transition name="fade">
+
+<transition name="fade">
     <p v-if="show">fade in</p>
-  </transition>
+</transition>
 ```
 
+> The v-enter transition class has been renamed to v-enter-from and the v-leave transition class has been renamed to v-leave-from. [link](https://v3.vuejs.org/guide/migration/transition.html#overview)
+
+```css
+.v-enter-from,
+.v-leave-to {
+    opacity: 0;
+}
+
+.v-leave-from,
+.v-enter-to {
+    opacity: 1;
+}
+```
 
 ----- 
 
