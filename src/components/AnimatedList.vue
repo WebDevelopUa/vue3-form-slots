@@ -58,10 +58,6 @@ export default {
   transition: opacity 1s ease-in-out;
 }
 
-.fade-leave-active {
-  position: absolute;
-}
-
 .fade-leave-from,
 .fade-enter-to {
   opacity: 1;
