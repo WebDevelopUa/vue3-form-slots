@@ -2,6 +2,10 @@
   <div id="app">
 
     <h2>Animation</h2>
+    <AnimatedListCss/>
+    <br/>
+    <hr/>
+    <br/>
 
     <AnimatedList/>
     <br/>
@@ -84,10 +88,12 @@ import ComponentY from "@/components/ComponentY";
 import TransitionAnimation from "@/components/TransitionAnimation";
 import JsAnimation from "@/components/JsAnimation";
 import AnimatedList from "@/components/AnimatedList";
+import AnimatedListCss from "@/components/AnimatedListCss";
 
 export default {
   name: 'App',
   components: {
+    AnimatedListCss,
     AnimatedList,
     JsAnimation,
     TransitionAnimation,

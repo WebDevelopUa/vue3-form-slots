@@ -1,4 +1,9 @@
-# Vue3 Form with Slots
+Vue3 Form with Slots
+---
+
+### [DEMO](https://vue3-form-slots.vercel.app)
+
+-----
 
 ## [Slots](https://v3.ru.vuejs.org/ru/guide/component-slots.html)
 
@@ -45,6 +50,12 @@ Animation Hooks:
 ## [Web Animations API](https://developer.mozilla.org/ru/docs/Web/API/Web_Animations_API)
 
 * [Using the Web Animations API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API/Using_the_Web_Animations_API)
+
+## [Animate.css](https://animate.style)
+
+* [public/index.html](public/index.html)
+* `<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" referrerpolicy="no-referrer" />`
+* [https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css](https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css)
 
 ----- 
 
