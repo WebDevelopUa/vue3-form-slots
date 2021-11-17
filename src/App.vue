@@ -2,6 +2,12 @@
   <div id="app">
 
     <h2>Animation</h2>
+
+    <AnimatedList/>
+    <br/>
+    <hr/>
+    <br/>
+
     <JsAnimation/>
     <br/>
     <hr/>
@@ -77,10 +83,12 @@ import ComponentX from "@/components/ComponentX";
 import ComponentY from "@/components/ComponentY";
 import TransitionAnimation from "@/components/TransitionAnimation";
 import JsAnimation from "@/components/JsAnimation";
+import AnimatedList from "@/components/AnimatedList";
 
 export default {
   name: 'App',
   components: {
+    AnimatedList,
     JsAnimation,
     TransitionAnimation,
     ComponentY,
@@ -102,15 +110,15 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  /*text-align: center;*/
   color: #2c3e50;
   margin-top: 60px;
 }
 
 input {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 6em;
+  /*margin-left: auto;*/
+  /*margin-right: auto;*/
+  /*width: 6em;*/
 }
 </style>
