@@ -7,6 +7,11 @@ Add ability to use data from a parent App component.
 No need to pass it down like a prop (alternative).
 
 
+## [Dynamic components](https://v3.ru.vuejs.org/ru/guide/component-dynamic-async.html)
+
+Components that can be swapped with another components.
+
+
 ----- 
 
 ## Project setup

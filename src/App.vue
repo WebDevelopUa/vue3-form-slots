@@ -1,6 +1,25 @@
 <template>
   <div id="app">
 
+    <h2>Dynamic components</h2>
+    <template>
+      <select v-model="componentName">
+        <option value="ComponentX">Component X</option>
+        <option value="ComponentY">Component Y</option>
+      </select>
+    </template>
+
+    <!--  Allows to dynamically load the component  -->
+    <!-- component lives on memory instead of unmount  -->
+    <keep-alive>
+      <component :is="componentName"></component>
+    </keep-alive>
+
+
+    <br/>
+    <hr/>
+    <br/>
+
     <!-- Form #1 -->
     <AppForm>
       <template v-slot:help>
@@ -43,17 +62,22 @@
 <script>
 
 import AppForm from "@/components/AppForm";
+import ComponentX from "@/components/ComponentX";
+import ComponentY from "@/components/ComponentY";
 
 export default {
   name: 'App',
   components: {
+    ComponentY,
+    ComponentX,
     AppForm
   },
   data() {
     return {
-      help: 'Custom App component data() for Help section'
+      help: 'Custom App component data() for Help section',
+      componentName: "ComponentX",
     }
-  }
+  },
 }
 </script>
 
