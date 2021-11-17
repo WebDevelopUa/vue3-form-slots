@@ -1,6 +1,14 @@
 <template>
   <div id="app">
 
+    <h2>Animation</h2>
+        <TransitionAnimation/>
+
+
+    <br/>
+    <hr/>
+    <br/>
+
     <h2>Dynamic components</h2>
     <template>
       <select v-model="componentName">
@@ -64,10 +72,12 @@
 import AppForm from "@/components/AppForm";
 import ComponentX from "@/components/ComponentX";
 import ComponentY from "@/components/ComponentY";
+import TransitionAnimation from "@/components/TransitionAnimation";
 
 export default {
   name: 'App',
   components: {
+    TransitionAnimation,
     ComponentY,
     ComponentX,
     AppForm
@@ -76,6 +86,7 @@ export default {
     return {
       help: 'Custom App component data() for Help section',
       componentName: "ComponentX",
+      flag: false
     }
   },
 }

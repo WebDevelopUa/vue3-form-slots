@@ -11,6 +11,14 @@ No need to pass it down like a prop (alternative).
 
 Components that can be swapped with another components.
 
+## [Animations](https://v3.ru.vuejs.org/ru/guide/transitions-enterleave.html)
+
+```html
+  <transition name="fade">
+    <p v-if="show">fade in</p>
+  </transition>
+```
+
 
 ----- 
 
