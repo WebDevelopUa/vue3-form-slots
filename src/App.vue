@@ -77,6 +77,35 @@
     </AppForm>
 
 
+    <br/>
+    <hr/>
+    <br/>
+
+    <!--  Slot properties - Vue feature  -->
+    <template>
+
+      <SlotPropComponent v-slot="v">
+        <h2>App Component heading => SlotProp Component</h2>
+        <p>App component with value from child component: <strong>{{ v.user.name }}</strong></p>
+      </SlotPropComponent>
+
+      <hr/>
+
+      <SlotPropComponent #default="{user, favorites}">
+        <p>Another SlotProp Component with value from child component: <strong>{{ user.name }}</strong></p>
+        <ul>
+          <li v-for="(item, index) in favorites"
+              :key="item+index"
+              :id="item+index"
+          >
+            {{ index }}. {{ item }}
+          </li>
+        </ul>
+      </SlotPropComponent>
+
+    </template>
+
+
   </div>
 </template>
 
@@ -89,10 +118,12 @@ import TransitionAnimation from "@/components/TransitionAnimation";
 import JsAnimation from "@/components/JsAnimation";
 import AnimatedList from "@/components/AnimatedList";
 import AnimatedListCss from "@/components/AnimatedListCss";
+import SlotPropComponent from "@/components/SlotPropComponent";
 
 export default {
   name: 'App',
   components: {
+    SlotPropComponent,
     AnimatedListCss,
     AnimatedList,
     JsAnimation,
